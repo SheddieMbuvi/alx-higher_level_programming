@@ -2,9 +2,9 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    number = -number #making the number positive
+    number = -number   #making the number positive
     last_digit = number % 10
-    number = -number #making the number negative again
+    number = -number   #making the number negative again
     last_digit = -last_digit
 else:
     last_digit = number % 10
