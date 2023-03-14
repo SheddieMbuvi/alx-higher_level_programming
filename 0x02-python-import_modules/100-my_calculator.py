@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import calculator_1, sys
+import calculator_1
+import sys
 if __name__ == "__main__":
     lim = len(sys.argv)
     if lim == 4:
