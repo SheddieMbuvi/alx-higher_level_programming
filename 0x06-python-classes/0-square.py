@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Square class defined for creating a square
+"""
+
+
 class Square:
-    """ Square class is an empty class that creates a square """
+    """The class"""
     pass
