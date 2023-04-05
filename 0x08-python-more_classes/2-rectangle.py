@@ -5,15 +5,18 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
+        """Initialization of rectangle"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Getting the wwidth"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """width setter"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -23,10 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """height getter"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """height setter"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -35,9 +40,11 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """The area calculator"""
         return self.__width * self.__height
 
     def perimeter(self):
+        """find the perimeter"""
         if self.__width == 0:
             perimeter = 0
             return perimeter
