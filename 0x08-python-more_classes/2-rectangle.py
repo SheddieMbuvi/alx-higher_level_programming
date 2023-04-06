@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+"""
+module contains one class
+"""
+
+
 class Rectangle:
-    """
-    class Rectangle
-    """
-
-
+    """ class Rectangle """
     def __init__(self, width=0, height=0):
-        """Initialization of rectangle"""
+        """ instantiation """
         self.width = width
         self.height = height
 
