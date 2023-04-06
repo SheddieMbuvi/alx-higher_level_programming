@@ -12,45 +12,38 @@ class Rectangle:
 
     @property
     def width(self):
-        """Getting the wwidth"""
+        """ getter for width """
         return self.__width
-
-    @width.setter
-    def width(self, value):
-        """width setter"""
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
 
     @property
     def height(self):
-        """height getter"""
+        """ getter for height """
         return self.__height
+
+    @width.setter
+    def width(self, value):
+        """ setter for width """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @height.setter
     def height(self, value):
-        """height setter"""
+        """ setter for height """
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
 
     def area(self):
-        """The area calculator"""
-        return self.__width * self.__height
+        """ returns area of the rectangle """
+        return self.__height * self.__width
 
     def perimeter(self):
-        """find the perimeter"""
-        if self.__width == 0:
-            perimeter = 0
-            return perimeter
-        elif self.__height == 0:
-            perimeter = 0
-            return perimeter
-        perimeter = (2 * self.__width) + (2 * self.__height)
-        return perimeter
+        """ returns perimeter of the rectangle """
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return (self.__height + self.__width) * 2
