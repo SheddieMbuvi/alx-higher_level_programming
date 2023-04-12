@@ -3,6 +3,8 @@
 No import module
 file reading function
 """
+
+
 def read_file(filename=""):
     """The function"""
     with open(filename, encoding='utf-8') as a_file:
