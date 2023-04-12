@@ -24,8 +24,8 @@ try:
 except:
     save_to_json_file([], "add_item.json")
 obj = load_from_json_file("add_item.json")
-l = []
+newl = []
 for i in range(1, len(sys.argv)):
-    l.append(sys.argv[i])
-obj = obj + l
+    newl.append(sys.argv[i])
+obj = obj + newl
 save_to_json_file(obj, "add_item.json")
