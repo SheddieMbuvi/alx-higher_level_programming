@@ -35,3 +35,10 @@ class Base:
                 new_list.append(cls.to_dictionary(i))
         with open(fname, 'w') as a_file:
             a_file.write(cls.to_json_string(new_list))
+
+    def from_json_string(json_string):
+        """method"""
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
