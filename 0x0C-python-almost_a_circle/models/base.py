@@ -59,9 +59,9 @@ class Base:
         try:
             with open(cls.__name__ + ".json", "r") as f:
                 ls = cls.from_json_string(f.read())
-                l = []
+                li = []
                 for i in ls:
-                    l.append(cls.create(**i))
-                return l
-        except:
+                    li.append(cls.create(**i))
+                return li
+        except (FileNotFoundError, PermissionError, IOError):
             return []
