@@ -1,2 +1,2 @@
 ## Web jQuery - JavaScript
-* DOM manipluation, update values, fetch data.... *
+*DOM manipluation, update values, fetch data....*
